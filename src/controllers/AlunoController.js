@@ -19,7 +19,7 @@ class AlunoController {
       ], // Ordena os alunos e imagens
       include: {
         model: Image,
-        attributes: ['url', 'filename'],
+        attributes: ['url'],
       },
     });
     res.json(alunos);
@@ -61,7 +61,7 @@ class AlunoController {
         ], // Ordena os alunos e imagens
         include: {
           model: Image,
-          attributes: ['url', 'filename'],
+          attributes: ['url'],
         },
       });
 
